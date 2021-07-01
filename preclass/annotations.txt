@@ -1,0 +1,37 @@
+- Para que servem
+    - Manipular dados sob demanda 
+    - Resolve 90% dos casos que dizem que Node.js não é para isso 
+        - Evita processamento desnecessário 
+        - Controla concorrencia e faz controle automático de gestão de tráfego
+
+    - Estão no Node.js desde a primeira versão (mostrar print)
+    - Trabalham com Buffers que são os dados brutos e são quebrados em fragmentos, conhecidos como chunks
+    - Herdam de events : .on data, error, close e end
+    - Fluxo contínuo de dados
+    
+- Categorias de Streams 
+    - Readable Stream 
+        São streams que emitem dados 
+        Ex: download de arquivos 
+            leitor de banco de dados 
+        fs.createReadStream()
+
+    - Writable Streams
+        São streams que armazenam dados 
+        fs.createWriteStream()
+
+    Node.js based HTTP server, request is a readable stream and response is a writable stream
+
+    - Transform Streams
+        São Streams que Mapeiam dados 
+
+- Casos de uso mais comuns 
+    - Leitura e escrita de arquivos grandes 
+    - Relatórios 
+    - Extração e compressão de arquivos grandes
+    - Processamento de video 
+
+Ex.1 
+    Readable
+
+https://nodesource.com/blog/understanding-streams-in-nodejs/
